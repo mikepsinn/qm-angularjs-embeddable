@@ -30,10 +30,9 @@ angular.module('qmStarterApp',
     .config(function (settingsProvider) {
         var currentDomainWithPort = settingsProvider.extractDomainWithPort(window.location.href);
         var currentDomainWithoutPort = settingsProvider.stripPort(currentDomainWithPort);
-        if (currentDomainWithoutPort.indexOf('staging') !== -1) {  //if app hosted on staging
-            settingsProvider.setSettings({apiHost: 'https://staging.quantimo.do/'});
-        }
-        if (currentDomainWithoutPort.indexOf('local') !== -1) {  //if app in development
-            settingsProvider.setSettings({apiHost: 'https://local.quantimo.do/'});
-        }
+        var apiUrl = 'app.quantimo.do';
+        if (currentDomainWithoutPort.indexOf('staging') !== -1) {apiUrl = 'staging.quantimo.do';} //if app hosted on staging
+        if (currentDomainWithoutPort.indexOf('local') !== -1) {apiUrl = 'local.quantimo.do';} //if app in development
+        if(qm.urlHelper.getParam('apiUrl')){apiUrl = qm.urlHelper.getParam('apiUrl');}
+        settingsProvider.setSettings({apiHost: 'https://'+apiUrl+'/'});
     });
