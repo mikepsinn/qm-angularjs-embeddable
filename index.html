@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="qmStarterApp" ng-controller="starterController" id="qm-app-top">
 <head>
-    <base href="/embeddable/"/>
+    <base href="/"/>
+    <!--Use below for development-->
+    <!--<base href="/qm-angularjs-embeddable/"/>-->
     <meta charset="UTF-8">
     <style type="text/css">
         body { background: none !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
@@ -28,7 +30,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-route.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js   "></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-sanitize.min.js"></script>
@@ -40,8 +42,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script src="bower_components/angular-wikipedia-api-factory/dist/angular-wikipedia-api-factory.min.js"></script>
-<script src="https://raw.githubusercontent.com/QuantiModo/quantimodo-android-chrome-ios-web-app/develop/src/js/qmLogger.js"></script>
-<script src="https://raw.githubusercontent.com/QuantiModo/quantimodo-android-chrome-ios-web-app/develop/src/js/qmHelpers.js"></script>
+<script src="common/qmLogger.js"></script>
+<script src="common/qmHelpers.js"></script>
 <!--3rd party-->
 <!--Starter app-->
 <script src="starter/starterApp.js"></script>
