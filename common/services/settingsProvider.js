@@ -27,10 +27,10 @@ angular.module('qmCommon')
                         settings[camelCasedParamName] = parsedState[param]; //TODO we can be more smart here
                     }
                 }
-                console.debug('Now app configuration is following:', settings);
+                console.debug('New app configuration: ' + JSON.stringify(settings));
             },
             setApplicationFromGet: function (getParams) {
-                console.debug('Get params will be used to setup application', getParams);
+                console.debug('Get params will be used to setup application' + JSON.stringify(getParams));
                 for (var param in getParams) {
                     if (getParams.hasOwnProperty(param)) {
                         //convert param names to camelCase
