@@ -1,9 +1,9 @@
 {
-  "name": "Quantimodo Embeddable Features",
+  "name": "quantimodo-angularjs-embeddable",
   "version": "1.0.0",
-  "homepage": "staging.quantimo.do/embeddable/",
+  "homepage": "angularjs-embeddable.quantimo.do",
   "authors": [
-    ""
+    "mikepsinn"
   ],
   "description": "Quantimodo",
   "main": "index.html",
@@ -16,5 +16,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular-wikipedia-api-factory": "^0.2.4"
+  }
 }
