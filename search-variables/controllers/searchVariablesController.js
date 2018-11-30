@@ -102,7 +102,7 @@ angular.module('qmSearchVariables')
             console.debug('Going to open variable setting modal for var:', variable);
 
             var modalInstance = $uibModal.open({
-                templateUrl: '/embeddable/search-variables/templates/variable-settings-modal.html',
+                templateUrl: 'search-variables/templates/variable-settings-modal.html',
                 controller: 'varSettingsModalController',
                 resolve: {
                     variable: function () {
@@ -140,7 +140,7 @@ angular.module('qmSearchVariables')
             console.debug('Going to open add measurement modal for var:', variable);
 
             var modalInstance = $uibModal.open({
-                templateUrl: '/embeddable/search-variables/templates/add-measurement-modal.html',
+                templateUrl: 'search-variables/templates/add-measurement-modal.html',
                 controller: 'addMeasurementModalController',
                 resolve: {
                     variable: function () {

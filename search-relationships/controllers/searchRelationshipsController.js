@@ -252,7 +252,7 @@ angular.module('qmSearchRelationships').controller('searchRelationshipsControlle
 
             //open confirmation modal
             var modalInstance = $uibModal.open({
-                templateUrl: '/embeddable/search-relationships/templates/vote-confirm-modal.html',
+                templateUrl: 'search-relationships/templates/vote-confirm-modal.html',
                 controller: 'voteModalInstanceController',
                 resolve: {
                     confirmationOptions: function () {
@@ -309,7 +309,7 @@ angular.module('qmSearchRelationships').controller('searchRelationshipsControlle
                 QuantimodoSearchService.getUnits(function (units) {
 
                     var modalInstance = $uibModal.open({
-                        templateUrl: '/embeddable/search-relationships/templates/add-measurement-modal.html',
+                        templateUrl: 'search-relationships/templates/add-measurement-modal.html',
                         controller: 'addMeasurementModalInstanceController',
                         resolve: {
                             variable: function () {
@@ -365,7 +365,7 @@ angular.module('qmSearchRelationships').controller('searchRelationshipsControlle
                     console.log('Variable details:', varDetails);
 
                     var modalInstance = $uibModal.open({
-                        templateUrl: '/embeddable/search-relationships/templates/variable-settings-modal.html',
+                        templateUrl: 'search-relationships/templates/variable-settings-modal.html',
                         controller: 'varSettingsModalInstanceController',
                         resolve: {
                             variable: function () {

@@ -13,7 +13,7 @@ angular.module('qmCommon')
             storage: {
                 prefix: 'qm_'
             },
-            baseHref: '/embeddable/',   //this should be same to base href defined at index page
+            baseHref: '/',   //this should be same to base href defined at index page
             setApplicationFromState: function (stateString) {
                 console.debug('State string will be used to setup application', stateString);
                 var parsedState = JSON.parse(decodeURIComponent(stateString));
